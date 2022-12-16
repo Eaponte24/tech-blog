@@ -22,13 +22,13 @@
   "homepage": "https://github.com/Eaponte24/tech-blog#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
-    "connect-session-sequelize": "^6.1.1",
+    "connect-session-sequelize": "^7.0.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-handlebars": "^4.0.4",
+    "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
-    "mysql2": "^2.1.0",
-    "sequelize": "^5.21.12"
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
 },
 "devDependencies": {
     "jest": "^26.4.2",
