@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', withAuth, async (req, res) => {
+router.get('/',  async (req, res) => {
     try {
         const postData = await Post.findAll({
             where: {
@@ -41,7 +41,7 @@ router.get('/', withAuth, async (req, res) => {
       }
     });
 
-    router.get('/edit/:id', withAuth, async (req, res) => {
+    router.get('/edit/:id',  async (req, res) => {
         try {
             const postData = await Post.findOne({
                 where: {
@@ -72,14 +72,14 @@ router.get('/', withAuth, async (req, res) => {
     
             console.log(eachPost);
         
-            res.render('edit-post', { eachPost, loggedIn: true });
+            res.render('editPost', { eachPost, loggedIn: true });
           } catch (err) {
             res.status(500).json(err);
           }
         });
 
         router.get('/new', (req, res) => {
-            res.render('new-post');
+            res.render('newPost');
         });
 
 

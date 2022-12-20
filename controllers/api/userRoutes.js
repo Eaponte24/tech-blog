@@ -90,7 +90,7 @@ router.post("/login", async (req, res) => {
     });
 
     if (!userData) {
-      res.status(404).json({ message: "No user found with this id" });
+      res.status(404).json({ message: "No user with that Username!" });
       return;
     }
 
